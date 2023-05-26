@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300&display=swap");
+
+:root {
+  --bg-color: #16161a;
+  --main-text: #fdfcfc;
+  --accent-color: #daff40;
+  --subtitle: #8b7df7;
+
+  --size-title: 48px;
+  --size-subtitle: 36px;
+  --p: 26px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  font-family: "Outfit", sans-serif;
+  color: var(--main-text);
+  font-size: var(--p);
+  font-weight: lighter;
+}
+/* Codigo generico */
+/* Hace que los svg sean "responsive" */
+.svg {
+  width: 100%;
+  height: auto;
+}
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: var(--main-text);
+}
+.acentuado {
+  color: var(--accent-color);
+}
+.subtitulo {
+  font-size: var(--size-subtitle);
+}
+/* Codigo especifico */
+/* Nav */
+.centrar_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.column {
+  flex-direction: column;
+}
+.barra_nav_container {
+  position: relative;
+  width: 100%;
+  z-index: -1;
+}
+.foto_perfil {
+  width: 20%;
+  position: absolute;
+}
+.elementos_navegacion {
+  font-size: var(--p);
+  gap: 413px;
+  margin-top: -100px;
+}
+.vinculo:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+/* Main */
+.texto_principal {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+}
+h1 {
+  font-size: var(--size-title);
+  margin-left: 180px;
+}
