@@ -112,12 +112,11 @@ h1 {
 }
 .grid {
   display: grid;
-  place-items: center;
+  place-items: center start;
   grid-template-columns: repeat(2, 1fr);
 }
-
-.tarjeta {
-  width: fit-content;
+.right {
+  place-items: center end;
 }
 .texto_derecha {
   text-align: right;
@@ -141,7 +140,7 @@ h1 {
   z-index: -1;
 }
 .elementos_footer {
-  transform: translateY(110px);
+  transform: translateY(130px);
   display: flex;
   justify-content: center;
   align-items: center;
