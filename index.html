@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Cv Personal</title>
   </head>
   <body>
@@ -12,28 +19,28 @@
     <nav class="">
       <section class="barra_nav_container centrar_flex column">
         <img
-          class="fondo-nav svg"
+          class="fondo_nav svg"
           src="./assets/nav.svg"
-          alt="fondo_navegacion"
+          alt="navigation background"
         />
         <img
           class="foto_perfil svg"
           src="./assets/foto_perfil.png"
           alt="perfil"
         />
+        <ul class="elementos_navegacion centrar_flex">
+          <li>
+            <a href="#" class="acentuado vinculo">Inicio</a>
+          </li>
+          <li>
+            <a href="./sobremi.html" class="vinculo">Sobre Mi</a>
+          </li>
+        </ul>
       </section>
-
-      <ul class="elementos_navegacion centrar_flex">
-        <li>
-          <a href="#" class="acentuado vinculo">Inicio</a>
-        </li>
-        <li>
-          <a href="./sobremi.html" class="vinculo">Sobre Mi</a>
-        </li>
-      </ul>
     </nav>
 
     <main>
+      <!-- Texto principal -->
       <section class="texto_principal">
         <h1>
           ¡Hola! Soy <span class="acentuado">Omar Alexandro</span>, <br />
@@ -43,43 +50,128 @@
         </h1>
       </section>
 
-      <section class="secciones">
-        <h2>Datos personales</h2>
-        <p>
-          Mi nombre es
-          <span class="acentuado">Omar Alexandro Espinosa Fernández</span><br />
-          Nací en <span class="acentuado">Veracruz, Mexico</span><br />
-          Tengo <span class="acentuado">18 años</span><br />
-          Mi email personal es
-          <span class="acentuado">omarespinosafernandez@gmail.com</span><br />
-          Me puedes contactar por teléfono al
-          <span class="acentuado">+52 922 156 1943</span><br />
-        </p>
-        <img src="" alt="" />
-      </section>
+      <!-- Contenedor secciones -->
+      <section class="container_secciones">
+        <!-- Datos personales -->
+        <section class="secciones grid">
+          <div class="tarjeta">
+            <h2>Datos personales</h2>
+            <p class="texto_tarjeta">
+              Mi nombre es
+              <span class="acentuado">Omar Alexandro Espinosa Fernández</span
+              ><br />
+              <br />
+              Nací en <span class="acentuado">Veracruz, Mexico</span><br />
+              <br />
+              Tengo <span class="acentuado">18 años</span><br />
+              <br />
+              Mi email personal es
+              <span class="acentuado">omarespinosafernandez@gmail.com</span
+              ><br />
+              <br />
+              Me puedes contactar por teléfono al <br />
+              <span class="acentuado">+52 922 156 1943</span><br />
+            </p>
+          </div>
 
-      <section class="secciones">
-        <h2>Formación académica</h2>
-        <p>
-          <span class="acentuado subtitulo"> 2022 - En curso</span> <br />
-          Ingeniería en Sistemas Universidad Tecnm <br />
-          <span class="acentuado subtitulo">2019 - 2022</span> <br />
-          Programación Bachillerato CBTIS 213 <br />
-          <span class="acentuado subtitulo">2017 - 2019 </span> <br />
-          Finanzas Secundaria ETI 158
-        </p>
-        <img src="" alt="" />
-      </section>
-      <section class="secciones">
-        <h2>Experiencia profesional</h2>
-        <p>
-          <span class="acentuado subtitulo">Freelancer</span><br />
-          Sept 2022 - En curso <br />
-          <span class="acentuado subtitulo">Soporte IT/FrontEnd</span> <br />
-          Dic 2021 - Ago 2022 Xibak
-        </p>
-        <img src="" alt="" />
+          <div class="icon_svg_container">
+            <img
+              class="svg izquierda"
+              src="./assets/3dAssets/persona.svg"
+              alt="icono persona"
+            />
+          </div>
+        </section>
+
+        <!-- Formacion academica -->
+        <section class="secciones grid">
+          <div class="icon_svg_container">
+            <img
+              class="svg derecha"
+              src="./assets/3dAssets/libroylapiz.svg"
+              alt="icono libro y lapiz"
+            />
+          </div>
+
+          <div class="tarjeta texto_derecha">
+            <h2>Formación académica</h2>
+            <p>
+              <span class="acentuado subtitulo"> 2022 - En curso</span> <br />
+              Ingeniería en Sistemas Universidad Tecnm <br />
+              <br />
+              <span class="acentuado subtitulo">2019 - 2022</span> <br />
+              Programación Bachillerato CBTIS 213 <br />
+              <br />
+              <span class="acentuado subtitulo">2017 - 2019 </span> <br />
+              Finanzas Secundaria ETI 158
+            </p>
+          </div>
+        </section>
+
+        <!-- Experiencia profesional -->
+        <section class="secciones grid">
+          <div class="tarjeta">
+            <h2>Experiencia profesional</h2>
+            <p class="texto_tarjeta">
+              <span class="acentuado subtitulo">Freelancer</span><br />
+              Sept 2022 - En curso <br />
+              <br />
+              <span class="acentuado subtitulo">Soporte IT/FrontEnd</span>
+              <br />
+              Dic 2021 - Ago 2022 Xibak
+            </p>
+          </div>
+
+          <div class="icon_svg_container">
+            <img
+              class="svg izquierda"
+              src="./assets/3dAssets/maleta.svg"
+              alt="icono maleta"
+            />
+          </div>
+        </section>
       </section>
     </main>
+
+    <footer class="footer_container">
+      <img
+        class="footer_bg"
+        src="./assets/footer.svg"
+        alt="footer background"
+      />
+      <section class="elementos_footer column">
+        <ul class="icons_footer_container">
+          <li>
+            <a
+              target="_blank"
+              href="https://www.facebook.com/profile.php?id=100005111087855"
+            >
+              <i class="icons fa-brands fa-facebook fa-lg"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://instagram.com/omaralexx_?igshid=OGQ5ZDc2ODk2ZA=="
+              ><i class="icons fa-brands fa-instagram fa-lg"></i
+            ></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://github.com/OmarAlex24">
+              <i class="icons fa-brands fa-github fa-lg"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/omar-alexandro-espinosa-fernandez-6b6962258/"
+            >
+              <i class="icons fa-brands fa-linkedin fa-lg"></i
+            ></a>
+          </li>
+        </ul>
+        <p>Omar Espinosa 2023</p>
+      </section>
+    </footer>
   </body>
 </html>
