@@ -6,13 +6,18 @@
   --accent-color: #daff40;
   --subtitle: #8b7df7;
 
-  --size-title: 48px;
-  --size-subtitle: 36px;
-  --p: 26px;
+  --size-title: 4.8rem;
+  --size-subtitle: 3.6rem;
+  --p: 2.6rem;
+
+  --size-title-mobile: 3rem;
+  --size-subtitle-mobile: 2.6rem;
+  --p-mobile: 1.8rem;
 }
 
 html {
   box-sizing: border-box;
+  font-size: 10px;
 }
 
 *,
@@ -45,32 +50,16 @@ a {
 .acentuado {
   color: var(--accent-color);
 }
-.subtitulo {
-  font-size: var(--size-subtitle);
-}
+
 /* Codigo especifico */
 /* Nav */
-.centrar_flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .column {
   flex-direction: column;
 }
-.barra_nav_container {
-  position: relative;
-  width: 100%;
-  z-index: 5;
-}
-.fondo_nav {
-  z-index: 1;
-}
 .foto_perfil {
   width: 20%;
-  position: absolute;
-  z-index: 7;
-  transform: translateY(-25px);
+  z-index: 3;
   transition: transform 0.5s ease;
 }
 .foto_perfil:hover {
@@ -82,7 +71,7 @@ a {
   gap: 413px;
   transform: translateY(-120px);
   position: relative;
-  z-index: 6;
+  z-index: 2;
 }
 .vinculo {
   border-bottom: 1px solid transparent;
@@ -95,17 +84,7 @@ a {
   color: var(--accent-color);
 }
 /* Main */
-/* Texto principal */
-.texto_principal {
-  height: 60vh;
-  display: flex;
-  align-items: center;
-  transform: translateY(-100px);
-}
-h1 {
-  font-size: var(--size-title);
-  margin-left: 180px;
-}
+
 /* Tarjetas */
 .secciones {
   margin: 0 228px;
@@ -159,3 +138,44 @@ h1 {
 .icons:hover {
   transform: translateY(-8px);
 }
+@media screen and (min-width: 601px) {
+  .subtitulo {
+    font-size: var(--size-subtitle);
+  }
+  h1 {
+    font-size: var(--size-title);
+    margin-left: 180px;
+  }
+  .texto_principal {
+    height: 45vh;
+  }
+  .foto_perfil {
+    transform: translateY(-25px);
+    position: absolute;
+  }
+  .centrar_flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: var(--size-title-mobile);
+    width: 100px;
+  }
+  .subtitulo {
+    font-size: var(--size-subtitle-mobile);
+  }
+  .texto_principal {
+  }
+}
+/* temporalmente comentario */
+/* .barra_nav_container {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+} */
+/* .fondo_nav {
+  z-index: 1;
+} */
