@@ -105,6 +105,7 @@ main {
 .sobremi {
   margin: -20px 0 100px 0;
   height: 50vh;
+  gap: 8%;
 }
 .texto_tarjeta {
   font-size: var(--p);
