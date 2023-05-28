@@ -35,6 +35,9 @@ body {
   font-size: var(--p);
   font-weight: lighter;
 }
+body > * {
+  max-width: 100%;
+}
 /* Codigo generico */
 /* Hace que los svg sean "responsive" */
 .svg {
@@ -156,21 +159,20 @@ h1 {
   cursor: pointer;
 }
 /* Footer */
-.footer_container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 .footer_bg {
+  max-width: 100%;
   position: absolute;
   z-index: -1;
 }
 .elementos_footer {
-  transform: translateY(130px);
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
+}
+.footer_container {
+  display: flex;
+  justify-content: end;
 }
 .icons_footer_container {
   display: grid;
@@ -178,16 +180,21 @@ h1 {
   padding: 0;
   gap: 25px;
 }
+.icons_footer_container > li {
+  width: min-content;
+}
 
 .icons {
   color: var(--main-text);
   transition: transform 0.5s ease;
+  font-size: 4rem;
 }
 .icons:hover {
   transform: translateY(-8px);
 }
 @media screen and (min-width: 601px) {
 }
+
 @media screen and (max-width: 600px) {
   h1 {
     font-size: var(--size-title-mobile);
@@ -212,6 +219,7 @@ h1 {
   }
   .texto_tarjeta {
     font-size: var(--p-mobile);
+    margin: 0;
   }
   .difuminado {
     width: 50%;
@@ -220,5 +228,15 @@ h1 {
   }
   .libro {
     grid-row: 2/3;
+  }
+  .icons_footer_container {
+    width: 50%;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    gap: 0;
+  }
+  .icons {
+    font-size: 1.8rem;
   }
 }
