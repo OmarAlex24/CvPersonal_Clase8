@@ -53,7 +53,6 @@ a {
 
 /* Codigo especifico */
 /* Nav */
-
 .column {
   flex-direction: column;
 }
@@ -88,6 +87,25 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+.subtitulo {
+  font-size: var(--size-subtitle);
+}
+h1 {
+  font-size: var(--size-title);
+}
+.texto_principal {
+  height: 20vh;
+  width: 70%;
+}
+.foto_perfil {
+  transform: translateY(-25px);
+  position: absolute;
+}
+.centrar_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* Tarjetas */
 .container_secciones {
@@ -169,30 +187,22 @@ main {
   transform: translateY(-8px);
 }
 @media screen and (min-width: 601px) {
-  .subtitulo {
-    font-size: var(--size-subtitle);
-  }
-  h1 {
-    font-size: var(--size-title);
-  }
-  .texto_principal {
-    height: 20vh;
-    width: 70%;
-  }
-  .foto_perfil {
-    transform: translateY(-25px);
-    position: absolute;
-  }
-  .centrar_flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 }
 @media screen and (max-width: 600px) {
   h1 {
     font-size: var(--size-title-mobile);
-    width: 100px;
+    width: 100%;
+  }
+  .texto_principal {
+    height: 30vh;
+    width: 70%;
+  }
+  .elementos_navegacion {
+    font-size: var(--p);
+    gap: 13rem;
+    transform: translateY(-50px);
+    position: relative;
+    z-index: 2;
   }
   .subtitulo {
     font-size: var(--size-subtitle-mobile);
