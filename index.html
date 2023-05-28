@@ -12,17 +12,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <title>Cv Personal</title>
   </head>
   <body>
     <!-- Navegacion -->
     <nav class="">
       <section class="barra_nav_container centrar_flex column">
-        <img
-          class="fondo_nav svg"
-          src="./assets/nav.svg"
-          alt="navigation background"
-        />
+        <img class="svg" src="./assets/nav.svg" alt="navigation background" />
         <img
           class="foto_perfil svg"
           src="./assets/foto_perfil.png"
@@ -30,7 +27,7 @@
         />
         <ul class="elementos_navegacion centrar_flex">
           <li>
-            <a href="#" class="acentuado vinculo">Inicio</a>
+            <a href="./index.html" class="acentuado vinculo">Inicio</a>
           </li>
           <li>
             <a href="./sobremi.html" class="vinculo">Sobre Mi</a>
@@ -52,7 +49,7 @@
       <!-- Contenedor secciones -->
       <section class="container_secciones">
         <!-- Datos personales -->
-        <section class="secciones grid">
+        <section class="grid">
           <div class="tarjeta">
             <h2>Datos personales</h2>
             <p class="texto_tarjeta">
@@ -75,26 +72,34 @@
 
           <div class="icon_svg_container">
             <img
-              class="svg izquierda"
-              src="./assets/3dAssets/persona.svg"
+              class="responsive-image"
+              src="./assets/3dAssets/boy.png"
               alt="icono persona"
             />
+            <div class="difuminado"></div>
           </div>
         </section>
 
         <!-- Formacion academica -->
-        <section class="secciones grid right">
+        <section class="grid">
           <div class="icon_svg_container">
             <img
-              class="svg derecha"
-              src="./assets/3dAssets/libroylapiz.svg"
-              alt="icono libro y lapiz"
+              class="responsive-image libro"
+              src="./assets/3dAssets/notebook-dynamic-color.png"
+              alt="icono libro"
             />
+            <img
+              class="responsive-image lapiz"
+              src="./assets/3dAssets/lapiz.png"
+              alt="icono lapiz"
+            />
+
+            <div class="difuminado"></div>
           </div>
 
           <div class="texto_derecha">
             <h2>Formación académica</h2>
-            <p>
+            <p class="texto_tarjeta">
               <span class="acentuado subtitulo"> 2022 - En curso</span> <br />
               Ingeniería en Sistemas Universidad Tecnm <br />
               <br />
@@ -108,7 +113,7 @@
         </section>
 
         <!-- Experiencia profesional -->
-        <section class="secciones grid">
+        <section class="grid">
           <div class="tarjeta">
             <h2>Experiencia profesional</h2>
             <p class="texto_tarjeta">
@@ -123,10 +128,11 @@
 
           <div class="icon_svg_container">
             <img
-              class="svg izquierda"
-              src="./assets/3dAssets/maleta.svg"
+              class="responsive-image"
+              src="./assets/3dAssets/travel-dynamic-color.png"
               alt="icono maleta"
             />
+            <div class="difuminado"></div>
           </div>
         </section>
       </section>
