@@ -68,7 +68,7 @@ a {
 }
 .elementos_navegacion {
   font-size: var(--p);
-  gap: 413px;
+  gap: 41rem;
   transform: translateY(-150px);
   position: relative;
   z-index: 2;
@@ -80,7 +80,6 @@ a {
 .vinculo:hover {
   border-color: var(--accent-color);
   cursor: pointer;
-
   color: var(--accent-color);
 }
 /* Main */
@@ -119,6 +118,7 @@ main {
   justify-content: center;
   align-items: center;
 }
+
 .difuminado {
   width: 60%;
   height: 60%;
@@ -198,13 +198,17 @@ main {
     font-size: var(--size-subtitle-mobile);
   }
   .grid {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
   }
   .texto_tarjeta {
     font-size: var(--p-mobile);
   }
   .difuminado {
-    filter: blur(30px);
+    width: 50%;
+    height: 50%;
+    filter: blur(60px);
+  }
+  .libro {
+    grid-row: 2/3;
   }
 }
